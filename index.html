@@ -12,6 +12,46 @@
     <!-- comienzo de código de página -->
 
     <header>
+
+
+
+        <!-- NAVBAR DE PAGINA  -->
+
+          <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo segretaria.png" alt="Logo" width="auto" height="30" class="d-inline-block align-text-top "></a>
+              
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#cronograma">Cronograma de Actividades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#videos">Video Infomativo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#recursos">Recursos Descargables</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#cedena">Cadena de Prevencion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#rcp">Aprende RPC</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+
         <img class="img-header" src="img/70d438182c0fbdf3f0a07d93fe59f4e7.png" />
     </header>
 
@@ -19,7 +59,8 @@
         <h1>Semana de la Prevención de los Ahogamientos</h1>
         <p id="intro">El área de Seguridad Náutica de la Secretaría de Estado de Deportes, en conmemoración del Día Mundial de la Prevención del Ahogamiento que se celebra el 25 de julio, llevará a cabo diferentes acciones en el marco de la "Semana de la Prevención del Ahogamiento".</p>
 
-        <div class="contenedor">
+        <!-- Recuadro DIVISOR -->
+        <div class="contenedor" id="crongrama">
             <div class="seccion">
                 <h5>Cronograma de Actividades</h5>
             </div>
@@ -60,21 +101,29 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14613.028318417677!2d-68.83602470423796!3d-31.52827328586978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96814c72ed967e5f%3A0x3c3c18504ff9b42d!2sParador%20Punta%20Negra%20deportes%20acuaticos!5e1!3m2!1ses!2sar!4v1690083622538!5m2!1ses!2sar" width="100%" height="350" style= "border:2px solid #ffffff;border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="contenedor">
+        <div class="contenedor" id="videos">
             <div class="seccion">
-                <h5>Video Informativo</h5>
+                <h5>Videos Informativos</h5>
             </div>
         </div>
 
 
     <!-- Recuadro para el video -->
-    <div class="col" style="border: 3px solid #ccc; border-radius: 10px; padding: 0px;">
+    <!-- Video 1 -->
+        <div class="col" style="border: 3px solid #ccc; border-radius: 10px; padding: 0px; margin-top: 30px; margin-bottom: 30px;">
         
             <iframe width="100%" height="350" src="https://www.youtube.com/embed/2q9VesNWubM" title="Juntos, podemos prevenir los ahogamientos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+        </div>
+        <!-- Video 2 -->
+        <div class="col" style="border: 3px solid #ccc; border-radius: 10px; padding: 0px; margin-top: 30px; margin-bottom: 30px;">
+        
+            <iframe width="100%" height="707" src="https://www.youtube.com/embed/EC2_8ttinNs"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
 
 
-    <div class="contenedor">
+
+        <!-- Recuadro DIVISOR -->
+    <div class="contenedor" id="recursos">
         <div class="seccion">
             <h5>Recursos Descargables</h5>
         </div>
@@ -82,59 +131,82 @@
 
 
         <!-- Sección de la Organización Mundial de Salud -->
-        <div class="seccion-oms d-flex flex-column align-items-center m-3">
+        <div class="seccion-oms d-flex flex-column align-items-center m-3 mt-5 mb-5" id="seccion-oms">
             <div class="seccion-oms d-flex align-items-center">
-                <img class="img-oms" style="width: 25%; height: 25%; padding: 5px; " src="img/e90f44e24552770bf4eb6c35e2c79f90.png" />
+                <img class="img-oms" style="width: 25%; height: 25%; padding: 5px; " src="img/e90f44e24552770bf4eb6c35e2c79f90.png"  />
                     <h5 style="color:#008ECE; margin: 10px; font-size: x-large;">Organización Mundial de Salud</h5> 
              </div>
 
-             <div class="seccion-oms d-flex align-items-center">
-                <a href="https://www.who.int/es/news-room/fact-sheets/detail/drowning"><h5 style="color:#ffffff; margin: 10px;">Nota OMS Ahogamientos</h5></a>
-                <img class="img-oms" style="width: 20%; height: 20%; padding: 5px; " src="img/c5cb1fa9676df8e1bd95c3b4d4cd923f.png" />               
-             </div>
 
              <div class="seccion-oms d-flex align-items-center">
-                <a href="https://apps.who.int/iris/handle/10665/259488"><h5 style="color:#ffffff; margin: 10px;">Prevenir los ahogamientos: guía práctica</h5></a>
-                <img class="img-oms" style="width: 20%; height: 20%; padding: 5px; " src="img/c5cb1fa9676df8e1bd95c3b4d4cd923f.png" />               
+                <a href="https://www.who.int/es/news-room/fact-sheets/detail/drowning"><h5 style="color:#ffffff; margin: 10px;">Nota OMS Ahogamientos</h5></a>
+
+               <a href="https://www.who.int/es/news-room/fact-sheets/detail/drowning"> <img class="img-oms" style="padding: 5px;" src="img/c5cb1fa9676df8e1bd95c3b4d4cd923f.png" /></a>
              </div>
+
+             
+             <div class="seccion-oms d-flex align-items-center">
+                <a href="https://apps.who.int/iris/handle/10665/259488"><h5 style="color:#ffffff; margin: 10px;">Prevenir los ahogamientos: guía práctica</h5></a>
+
+                <a href="https://apps.who.int/iris/handle/10665/259488"> <img class="img-oms" style="padding: 5px;" src="img/c5cb1fa9676df8e1bd95c3b4d4cd923f.png" /></a>              
+             </div>
+
 
              <div class="seccion-oms d-flex align-items-center">
                 <a href="https://apps.who.int/iris/handle/10665/251498"><h5 style="color:#ffffff; margin: 10px;">Informe mundial sobre ahogamientos</h5></a>
-                <img class="img-oms" style="width: 20%; height: 20%; padding: 5px; " src="img/c5cb1fa9676df8e1bd95c3b4d4cd923f.png" />               
-             </div> 
-        </div>
 
-        <div class="contenedor">
+                <a href="https://apps.who.int/iris/handle/10665/251498"> <img class="img-oms" style="padding: 5px;" src="img/c5cb1fa9676df8e1bd95c3b4d4cd923f.png" /></a>              
+             </div> 
+
+        </div>
+        <!-- FIN Sección de la Organización Mundial de Salud -->
+
+
+        <!-- Recuadro DIVISOR -->
+        <div class="contenedor" id="cadena">
             <div class="seccion">
                 <h5>Cadena de Prevención</h5>
             </div>
         </div>
-
+        <!-- Recuadro Cadena de Supervivencia -->
         <div class="cont-img">
-            <img class="img-oms" style="width:100%;" src="img/cadena.png" /> 
+            <img class="img-oms mb-3 mt-3" style="width:100%;" src="img/cadena.png" /> 
         </div>
 
         <img class="imagen-flyer" style="width:100%; clip: rect(100px);" src="img/flyer vertical.png" />
 
-        <div class="contenedor">
+
+
+        <!-- Recuadro DIVISOR -->
+        <div class="contenedor" id="rcp">
             <div class="seccion">
                 <h5>Aprendé a hacer RCP</h5>
             </div>
         </div>
+
+
+
         <!-- Recuadro para el video -->
-    <div class="col" style=" border-radius: 10px; padding: 0px;">
+        <!-- Video 3 -->
+        <div class="col" style=" padding: 0px; margin-top: 30px; margin-bottom: 30px;">
         
-        <iframe width="100%" height="707" src="https://www.youtube.com/embed/3du6xvHXZKs" title="Aprende a hacer RCP - Seguridad Nautica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+             <iframe width="100%" height="707" src="https://www.youtube.com/embed/3du6xvHXZKs" title="Aprende a hacer RCP - Seguridad Nautica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+
 
 
 
         <!-- Footer de Pagina -->
-        <footer style="background: linear-gradient(180deg, #094857, #132124 100%);; color: #ffffff; text-align: center; padding: 20px; font-size:medium;">
-            © Julian Peruzzi <a href="https://www.linkedin.com/in/julianperuzzi" target="_blank" style="color: #ffffff;">www.linkedin.com/in/julianperuzzi</a>
-        </footer>
+
+            <footer style="background: linear-gradient(180deg, #094857, #132124 100%);; color: #ffffff; text-align: center; padding: 20px; font-size:medium;">
+
+                © Julian Peruzzi <a href="https://www.linkedin.com/in/julianperuzzi" target="_blank" style="color: #ffffff;">www.linkedin.com/in/julianperuzzi</a>
+
+            </footer>
+        <!-- FIN Footer de Pagina -->
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
     </body>
 </html>
