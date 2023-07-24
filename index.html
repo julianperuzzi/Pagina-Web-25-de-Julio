@@ -65,7 +65,7 @@
         <script>
             function smoothScroll(target) {
               const navbarHeight = $('.navbar').height();
-              const targetOffset = $(target).offset().top - navbarHeight - 10;
+              const targetOffset = $(target).offset().top - navbarHeight + 30;
               
               // Comprobamos si el navegador admite el desplazamiento suave utilizando 'scrollBehavior'
               if ('scrollBehavior' in document.documentElement.style) {
