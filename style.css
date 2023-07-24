@@ -70,12 +70,12 @@ h1 {
 h5 {
     color: white;
     margin: 0px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 ul.crono1 {
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -87,7 +87,7 @@ ul.crono1 li {
 ul.crono2 {
     padding-left: 20px;
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 30px;
 
