@@ -17,49 +17,77 @@
 
         <!-- NAVBAR DE PAGINA  -->
 
-          <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-
+                </button>
+    
                 <a class="navbar-brand" href="#">
-                    <img src="img/logo segretaria.png" alt="Logo" width="auto" height="30" class="d-inline-block align-text-top "></a>
-              
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="#cronograma">Cronograma de Actividades</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#videos">Video Infomativo</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#recursos">Recursos Descargables</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#cadena">Cadena de Prevencion</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#rcp">Aprende RPC</a>
-                  </li>
-
-                </ul>
-              </div>
+                    <img src="img/logo segretaria.png" alt="Logo" width="auto" height="40"
+                        class="d-inline-block align-text-top ">
+                </a>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cronograma" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                                onclick="smoothScroll('#cronograma')">Cronograma de Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#videos" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                                onclick="smoothScroll('#videos')">Video Informativo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recursos" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                                onclick="smoothScroll('#recursos')">Recursos Descargables</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cadena" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                                onclick="smoothScroll('#cadena')">Cadena de Prevencion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rcp" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                                onclick="smoothScroll('#rcp')">Aprende RPC</a>
+                        </li>
+    
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
+    
+        <!--  referencia jQuery, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        
+        <script>
+            function smoothScroll(target) {
+                const navbarHeight = $('.navbar').height();
+                const targetOffset = $(target).offset().top - navbarHeight - 30; 
+        
+                $('html, body').animate({
+                    scrollTop: targetOffset
+                }, 1000);
+            }
+        </script>
+        
 
 
-
-        <img class="img-header" src="img/70d438182c0fbdf3f0a07d93fe59f4e7.png" />
+        <img class="img-header" src="img/Copia de Banner Digital 25 julio.png" style="margin-top: 50px;" />
+        <img class="img-header" src="img/2.png" />
     </header>
 
     <body>
+
+
+
         <h1>Semana de la Prevención de los Ahogamientos</h1>
         <p id="intro">El área de Seguridad Náutica de la Secretaría de Estado de Deportes, en conmemoración del Día Mundial de la Prevención del Ahogamiento que se celebra el 25 de julio, llevará a cabo diferentes acciones en el marco de la "Semana de la Prevención del Ahogamiento".</p>
 
-        <!-- Recuadro DIVISOR -->
+        
+        <!------------------- Recuadro DIVISOR ------------------->
         <div class="contenedor" id="cronograma">
             <div class="seccion">
                 <h5>Cronograma de Actividades</h5>
@@ -67,6 +95,7 @@
         </div>
 
 
+        <!-- PRIMERA PARTE CRONOGRAMA -->
         <ul class="crono1">
             <li>Lunes 24 Lanzamiento de Campaña</li>
             <li>Martes 25 de Julio - Charlas de Prevención y RCP para la Comunidad
@@ -79,9 +108,11 @@
 
         <!-- Mapa -->
         <div class="col">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1780.6943292400613!2d-68.52289432295989!3d-31.536197430025545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDMyJzExLjMiUyA2OMKwMzEnMjIuOCJX!5e0!3m2!1ses!2sar!4v1690083339610!5m2!1ses!2sar" width="100%" height="350" style="border:2px solid #ffffff; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1780.6943292400613!2d-68.52289432295989!3d-31.536197430025545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDMyJzExLjMiUyA2OMKwMzEnMjIuOCJX!5e0!3m2!1ses!2sar!4v1690083339610!5m2!1ses!2sar" width="100%" height="250" style="border:2px solid #ffffff; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
+
+        <!-- SEGUNDA PARTE CRONOGRAMA -->
         <ul class="crono2">
             <li>Mércoles 26 de Julio - Tour de Prevención Secretaria de Estado de Deportes</li>
             <li>Jueves 27 de Julio - Tour de Prevención en Piletas</li>
@@ -97,18 +128,22 @@
         </ul>
 
         <!-- Mapa -->
-        <div class="col" >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14613.028318417677!2d-68.83602470423796!3d-31.52827328586978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96814c72ed967e5f%3A0x3c3c18504ff9b42d!2sParador%20Punta%20Negra%20deportes%20acuaticos!5e1!3m2!1ses!2sar!4v1690083622538!5m2!1ses!2sar" width="100%" height="350" style= "border:2px solid #ffffff;border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="col mb-5" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14613.028318417677!2d-68.83602470423796!3d-31.52827328586978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96814c72ed967e5f%3A0x3c3c18504ff9b42d!2sParador%20Punta%20Negra%20deportes%20acuaticos!5e1!3m2!1ses!2sar!4v1690083622538!5m2!1ses!2sar" width="100%" height="250" style= "border:2px solid #ffffff;border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="contenedor" id="videos">
+
+
+
+        <!------------------- Recuadro DIVISOR ------------------->
+        <div class="contenedor " id="videos">
             <div class="seccion">
                 <h5>Videos Informativos</h5>
             </div>
         </div>
 
 
-    <!-- Recuadro para el video -->
+    <!-- Recuadro VIDEOS  -->
     <!-- Video 1 -->
         <div class="col" style="border: 3px solid #ccc; border-radius: 10px; padding: 0px; margin-top: 30px; margin-bottom: 30px;">
         
@@ -117,12 +152,14 @@
         <!-- Video 2 -->
         <div class="col" style="border: 3px solid #ccc; border-radius: 10px; padding: 0px; margin-top: 30px; margin-bottom: 30px;">
         
-            <iframe width="100%" height="707" src="https://www.youtube.com/embed/EC2_8ttinNs"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="100%" height="707" src="https://www.youtube.com/embed/7qDzo8r7XlM" title="Campaña Prevención del Ahogamiento - Seguridad Náutica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
 
 
-        <!-- Recuadro DIVISOR -->
+
+
+        <!------------------- Recuadro DIVISOR ------------------->
     <div class="contenedor" id="recursos">
         <div class="seccion">
             <h5>Recursos Descargables</h5>
@@ -162,7 +199,9 @@
         <!-- FIN Sección de la Organización Mundial de Salud -->
 
 
-        <!-- Recuadro DIVISOR -->
+
+
+        <!------------------- Recuadro DIVISOR ------------------->
         <div class="contenedor" id="cadena">
             <div class="seccion">
                 <h5>Cadena de Prevención</h5>
@@ -177,7 +216,9 @@
 
 
 
-        <!-- Recuadro DIVISOR -->
+
+
+        <!------------------- Recuadro DIVISOR ------------------->
         <div class="contenedor" id="rcp">
             <div class="seccion">
                 <h5>Aprendé a hacer RCP</h5>
@@ -190,8 +231,9 @@
         <!-- Video 3 -->
         <div class="col" style=" padding: 0px; margin-top: 30px; margin-bottom: 30px;">
         
-             <iframe width="100%" height="707" src="https://www.youtube.com/embed/3du6xvHXZKs" title="Aprende a hacer RCP - Seguridad Nautica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="100%" height="707" src="https://www.youtube.com/embed/LmKaKah4UqA" title="Aprende a hacer RCP - Seguridad Náutica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
          </div>
+
 
 
 
@@ -204,6 +246,7 @@
 
             </footer>
         <!-- FIN Footer de Pagina -->
+
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
