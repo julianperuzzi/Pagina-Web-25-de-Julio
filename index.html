@@ -64,9 +64,15 @@
         
         <script>
             function smoothScroll(target) {
-              const navbarHeight = $('.navbar').height();
-              const targetOffset = $(target).offset().top - navbarHeight + 30;
-              
+              const navbar = $('.navbar');
+              const navbarHeight = navbar.height();
+              const targetOffset = $(target).offset().top - navbarHeight - 10;
+          
+              // Cerramos la barra de navegación si está abierta
+              if (navbar.hasClass('show')) {
+                navbar.collapse('hide');
+              }
+          
               // Comprobamos si el navegador admite el desplazamiento suave utilizando 'scrollBehavior'
               if ('scrollBehavior' in document.documentElement.style) {
                 window.scrollTo({
@@ -80,6 +86,11 @@
             }
           </script>
         
+
+          
+
+
+
 
 
         <img class="img-header" src="img/Copia de Banner Digital 25 julio.png" style="margin-top: 50px;" />
