@@ -116,12 +116,6 @@ ul.crono2 li {
     
 }
 
-
-
-  .navbar {
-    scroll-behavior: smooth;
-  }
-
 .navbar-toggler:focus {
     outline: none;
     box-shadow: none;

@@ -63,28 +63,16 @@
         
         
         <script>
+
             function smoothScroll(target) {
-              const navbar = $('.navbar');
-              const navbarHeight = navbar.height();
-              const targetOffset = $(target).offset().top - navbarHeight - 10;
-          
-              // Cerramos la barra de navegación si está abierta
-              if (navbar.hasClass('show')) {
-                navbar.collapse('hide');
-              }
-          
-              // Comprobamos si el navegador admite el desplazamiento suave utilizando 'scrollBehavior'
-              if ('scrollBehavior' in document.documentElement.style) {
-                window.scrollTo({
-                  top: targetOffset,
-                  behavior: 'smooth'
-                });
-              } else {
-                // Para navegadores que no admiten el desplazamiento suave, usamos un desplazamiento instantáneo
-                window.scrollTo(0, targetOffset);
-              }
+                const navbarHeight = $('.navbar').height(); 
+                const targetOffset = $(target).offset().top - navbarHeight; 
+    
+                $('html, body').animate({
+                    scrollTop: targetOffset
+                }, 500);
             }
-          </script>
+        </script>
         
 
           
