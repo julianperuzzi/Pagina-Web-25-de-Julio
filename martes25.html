@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Gs6ZGj7Iub8xx+Pe2msHTZbRYj2M2y8S5Mnkv0xnLzeo7Pr8sbC6+dVlC2Lj1TyaA34QOJ2YdC5eDFGn5wtaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+ 
+        <title>Semana de la Prevención del Ahogamiento Fotos</title>   
+    </head>
+    
+    <!-- comienzo de código de página -->
+
+    <header>
+
+
+
+        <!-- NAVBAR DE PAGINA  -->
+
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo segretaria.png" alt="Logo" width="auto" height="30"
+                        class="d-inline-block align-text-top ">
+                </a>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fotos" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                                onclick="smoothScroll('#fotos')">Fotos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Pagina Principal</a>
+                          </li>
+    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!--  referencia jQuery, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+               
+        <script>
+
+            function smoothScroll(target) {
+                const navbarHeight = $('.navbar').height(); 
+                const targetOffset = $(target).offset().top - navbarHeight; 
+    
+                $('html, body').animate({
+                    scrollTop: targetOffset
+                }, 500);
+            }
+        </script>
+        
+        <img class="img-header" src="img/Copia de Banner Digital 25 julio.png" style="margin-top: 50px;" />
+        <img class="img-header" src="img/2.png" />
+    </header>
+
+    <body>
+
+
+
+        <h1>Semana de la Prevención de los Ahogamientos</h1>
+        
+        
+        <!------------------- Recuadro  ------------------->
+                <h5 style="text-align: center;" id="fotos">Fotos de Actividades</h5>
+        <br>
+
+         <!-- Carrusel de Fotos -->
+  <div id="carouselFotos" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/fotos/WhatsApp Image 2023-07-25 at 13.16.31.jpeg" class="d-block w-100" alt="Foto 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/fotos/WhatsApp Image 2023-07-25 at 13.36.18.jpeg" class="d-block w-100" alt="Foto 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/fotos/WhatsApp Image 2023-07-25 at 13.36.41.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+      <div class="carousel-item">
+        <img src="img/fotos/WhatsApp Image 2023-07-25 at 13.38.25.jpeg" class="d-block w-100" alt="Foto 4">
+      </div>
+      <div class="carousel-item">
+        <img src="img/fotos/WhatsApp Image 2023-07-25 at 18.58.20.jpeg" class="d-block w-100" alt="Foto 5">
+      </div>
+      <div class="carousel-item">
+        <img src="img/fotos/WhatsApp Image 2023-07-26 at 03.38.45.jpeg" class="d-block w-100" alt="Foto 6">
+      </div>
+      <div class="carousel-item">
+        <img src="img/fotos/WhatsApp Image 2023-07-26 at 03.39.01.jpeg" class="d-block w-100" alt="Foto 7">
+      </div>
+      <div class="carousel-item">
+        <img src="img/fotos/WhatsApp Image 2023-07-26 at 03.39.15.jpeg" class="d-block w-100" alt="Foto 8">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFotos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselFotos" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+<br>
+
+ <!-- Carrusel de Fotos 2 -->
+ <div id="carouselFotos2" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/WhatsApp Image 2023-07-25 at 19.59.57.jpeg" class="d-block w-100" alt="Foto 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/WhatsApp Image 2023-07-25 at 20.03.28.jpeg" class="d-block w-100" alt="Foto 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/WhatsApp Image 2023-07-25 at 20.08.02.jpeg" class="d-block w-100" alt="Foto 3">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFotos2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselFotos2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+        
+
+        <!-- Footer de Pagina -->
+
+            <footer style="background: linear-gradient(180deg, #094857, #132124 100%);; color: #ffffff; text-align: center; padding: 20px; font-size:medium;">
+
+                © Julian Peruzzi <a href="https://www.linkedin.com/in/julianperuzzi" target="_blank" style="color: #ffffff;">www.linkedin.com/in/julianperuzzi</a>
+
+            </footer>
+        <!-- FIN Footer de Pagina -->
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    </body>
+</html>
