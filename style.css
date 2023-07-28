@@ -225,30 +225,23 @@ ul.crono2 li {
       font-size: 15px;
     }
   
-    .img-header {
-      margin-top: 40px;
-    }
+
   }
   
   @media (min-width: 768px) and (max-width: 991.98px) {
     body {
       font-size: 16px;
     }
-  
-    header {
-      padding: 30px;
-    }
-  
-    .img-header {
-      margin-top: 50px;
-    }
+    
+
   }
   
 
   @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) {
-    header {
+ 
+    .navbar{
+      font-size: 12px;
 
-      padding: 20px;
     }
   }
   .azules {
@@ -261,23 +254,21 @@ ul.crono2 li {
     margin-top: 10px;
     margin-bottom: 10px;
 } 
+
   @media (min-width: 992px) {
     body {
       font-size: 18px;
     } 
-    header {
-      padding: 40px;
+    .navbar{
+      font-size: 12px;
+
     }
-  
-    .img-header {
-      margin-top: 80px;
+    header{
+      padding: 0px 100px 0px 100px;
     }
+
     .azules {
-        width: 100%; 
-        height: auto; 
-        display: block; 
-        align-items: center;
-        border: #ffffff solid 2px;
+      height: auto; 
         border-radius: 20px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -288,18 +279,15 @@ ul.crono2 li {
     body {
       font-size: 20px;
     } 
-    header {
-      padding: 60px;
-    } 
-    .img-header {
-      margin-top: 100px;
+    header{
+      padding: 0px 200px 0px 200px;
+    }
+    .navbar{
+      font-size: 12px;
+
     }
     .azules {
-        width: auto; 
-        height: auto; 
-        display: block; 
-        align-items: center;
-        border: #ffffff solid 2px;
+      height: auto; 
         border-radius: 20px;
         margin-top: 10px;
         margin-bottom: 10px;
